@@ -16,3 +16,10 @@ Organizzare i singoli membri in card/schede prendendo a esempio uno dei due layo
 Consigli del giorno:
 Ragioniamo come sempre a step.
 Prima la logica in italiano e poi traduciamo in codice.
+
+--------
+Svolgimento:
+1-Creo tutti gli elementi nel file HTML
+2-Trasferisco i dati nel file JS creando le variabili
+3-Creo l'array degli oggetti con le informazioni fornite
+4-Eseguo tutta la logica
