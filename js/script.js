@@ -1,7 +1,7 @@
 //Variabili elementi html
 
 const main = document.querySelector('main')
-
+//Array con gli oggetti da utilizzare
 const infoTeam = [
     {
         name: 'Wayne Barnett',
@@ -36,15 +36,15 @@ const infoTeam = [
 
 ]
 //Numero del team
-
-
 const numberTeam = 6
+//Variabile card
 let cardProfile = ' '
-
+//Creazione delle card con un ciclo for
 for (let i = 0; i < numberTeam; i++) {
     const name = infoTeam[i].name
     const role = infoTeam[i].role
     const photo = infoTeam[i].photo
+    //Ciclo tra gli object dell'array
     for (let key in infoTeam[i]) {
         cardProfile = '<div class="card border-0 bg-white">'
         cardProfile +=
@@ -55,7 +55,7 @@ for (let i = 0; i < numberTeam; i++) {
             </div>`
         cardProfile += '</div>'
     }
-    console.log(cardProfile)
+    //Stampa in pagina
     main.innerHTML += cardProfile
 }
 
