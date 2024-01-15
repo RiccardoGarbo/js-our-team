@@ -36,19 +36,27 @@ const infoTeam = [
 
 ]
 //Numero del team
+
+
 const numberTeam = 6
 let cardProfile = ' '
 
 for (let i = 0; i < numberTeam; i++) {
-    cardProfile = '<div>'
-
-
-
-
-
-
-
-    cardProfile += '</div>'
+    const name = infoTeam[i].name
+    const role = infoTeam[i].role
+    const photo = infoTeam[i].photo
+    for (let key in infoTeam[i]) {
+        cardProfile = '<div class="card border-0 bg-white">'
+        cardProfile +=
+            `<img src=${photo}
+                <div class="card-body text-center">
+                    <h5 class="card-title">${name}</h5>
+                    <p class="card-text">${role}</p>
+            </div>
+    </div>`
+        cardProfile += '</div>'
+        console.log(cardProfile)
+    }
 }
 
 
