@@ -36,7 +36,7 @@ const infoTeam = [
 
 ]
 //Numero del team
-const numberTeam = 6
+const numberTeam = infoTeam.length
 //Variabile card
 let cardProfile = ' '
 //Creazione delle card con un ciclo for
